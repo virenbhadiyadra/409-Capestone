@@ -88,6 +88,7 @@ nav ul li a .icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('images/hero bg.svg');
     height: 100vh;
     position: relative;
 }
