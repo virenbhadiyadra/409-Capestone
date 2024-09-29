@@ -1,0 +1,83 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #211E1F;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #F05123;
+}
+
+nav ul li a .icon {
+    display: none; /* Icons hidden by default */
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Responsive styles for the mobile navigation */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #211E1F;
+        padding: 0.5rem 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Show icons and hide text for the mobile */
+    nav ul li a .icon {
+        display: block; /* Icons shown on the mobile */
+    }
+
+    nav ul li a .text {
+        display: none; /* Text hidden on the mobile */
+    }
+}
