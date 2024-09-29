@@ -8,6 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     padding-bottom: 60px;
+    background-color: #211E1F; 
 }
 
 /* Navigation Bar Styling */
@@ -81,3 +82,38 @@ nav ul li a .icon {
         display: none; /* Text hidden on the mobile */
     }
 }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    padding: 0 20px;
+}
+
+.hero-svg {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Fr mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 20px; 
+    }
+
+    .hero-svg {
+        max-width: 80%; 
+    }
+}
+
