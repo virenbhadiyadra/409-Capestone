@@ -12,3 +12,4 @@ document.querySelectorAll('nav ul li a').forEach(item => {
         icon.src = originalSrc;
     });
 });
+
