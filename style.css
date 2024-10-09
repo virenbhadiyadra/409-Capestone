@@ -172,6 +172,47 @@ section {
 	margin-right: 10px;
 }
 
+.fourth {
+	color: #fff;
+	font-size: 1.875rem;
+	padding-top: 120px;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.fourth .child {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+}
+
+.fourth .flex-child {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	gap: 30px;
+}
+
+.fourth .dp {
+	width: 40%;
+	position: relative;
+	top: 6.5vw;
+}
+
+.fourth .content {
+	text-align: left;
+	width: 50%;
+	position: relative;
+	bottom: 4vw;
+}
+.down {
+	animation-duration: 2s;
+}
+
 @media only screen and (max-width: 768px) {
 
 	.one {
