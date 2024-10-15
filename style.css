@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -166,6 +165,13 @@ section {
 }
 
 .arrow {
+	margin-top: 50px;
+	width: 30px !important;
+	float: right;
+	margin-right: 10px;
+}
+
+.a{
 	margin-top: 50px;
 	width: 30px !important;
 	float: right;
@@ -758,3 +764,9 @@ input {
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
+
+
+/* Projectt page css */
+
+
+
