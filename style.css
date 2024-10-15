@@ -213,6 +213,64 @@ section {
 	animation-duration: 2s;
 }
 
+.fifth {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	gap: 30px;
+	padding-bottom: 100px;
+}
+
+.fifth .child {
+	width: 80%;
+	text-align: left;
+}
+
+.fifth .child p {
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.fifth>img {
+	width: 20%;
+}
+
+.input-box {
+	display: flex;
+	align-items: center;
+	border-radius: 16px;
+	overflow: hidden;
+	background-image: url("assets/input-bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 80%;
+	height: 55px;
+	gap: 30px;
+}
+
+.input-box img {
+	width: 30px;
+	height: 30px;
+}
+
+input {
+	background: transparent;
+	height: 100%;
+	width: 75%;
+	outline: 0;
+	padding: 0;
+	border: 0;
+	padding-left: 40px;
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+::placeholder {
+	color: #fff;
+	font-size: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
 
 	.one {
@@ -259,6 +317,20 @@ section {
 
 	.block p {
 		margin-top: 0;
+	}
+	.fifth .input-box {
+		gap: 25px;
+		width: 100%;
+	}
+
+	.fifth .input-box img {
+		height: 20px;
+		width: 20px;
+	}
+
+	.fifth .input-box input {
+		padding-left: 20px;
+		font-size: 1rem;
 	}
 }
 

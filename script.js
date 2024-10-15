@@ -1,28 +1,44 @@
-// Function to add the "floating" class to specific images on the page
+const observerOptions = {
+    root: null, // Use the viewport as the root
+    rootMargin: "0px",
+    threshold: 0.1 // Trigger when 10% of the element is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fadeIn');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
 const addFloating = () => {
-    // Select all images in the ".upper-imgs" section (top images)
     const imgs = document.querySelectorAll(".upper-imgs img")
-    // Select all images in the ".bottom-imgs" section (bottom images)
     const imgs2 = document.querySelectorAll(".bottom-imgs img")
-    // Select the image with the ".left-img" class (left-side image)
     const imgs3 = document.querySelector(".left-img")
-    // Select the image with the ".right-img" class (right-side image)
     const imgs4 = document.querySelector(".right-img")
-     // Add the "floating" class to all images in the top section
+
     imgs.forEach(element => {
         element.classList.add("floating")
     });
-    // Add the "floating" class to all images in the bottom section
+
     imgs2.forEach(element => {
         element.classList.add("floating")
     });
-    // Add the "floating" class to the left-side image
     imgs3.classList.add("floating")
-    // Add the "floating" class to the right-side image
     imgs4.classList.add("floating")
 }
-// Call the addFloating function after a 1-second delay
 
 setTimeout(() => {
     addFloating()
 }, 1000);
+
+// Select all elements that should have the animation
+const animatedElements = document.querySelectorAll('.animated.down');
+
+animatedElements.forEach(element => {
+    observer.observe(element); // Start observing each element
+});
+
+const routeToProject = (route) => location.href = `/project-${route}.html`
