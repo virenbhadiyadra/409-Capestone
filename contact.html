@@ -34,8 +34,10 @@
         }
 
         input, textarea {
+            width: 100%; /* Ensure input and textarea fields take full width */
+            box-sizing: border-box; /* Include padding and borders in element's total width/height */
             padding: 15px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             border-radius: 5px;
             border: none;
             background-color: rgba(255, 255, 255, 0.2);
@@ -50,10 +52,12 @@
 
         textarea {
             min-height: 150px;
+            resize: none; /* Prevents resizing of the textarea */
         }
 
         button {
-            padding: 15px 20px;
+            width: 100%; /* Make the button same width as the input fields */
+            padding: 15px;
             font-size: 1.2rem;
             border: none;
             border-radius: 5px;
@@ -74,7 +78,7 @@
             }
 
             input, textarea, button {
-                font-size: 1rem;
+                font-size: 1rem; /* Adjust font size for smaller screens */
             }
         }
     </style>
