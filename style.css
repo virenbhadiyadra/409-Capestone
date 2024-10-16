@@ -906,5 +906,10 @@ html, body {
     }
 }
 
+.about_me_container{
+	height: 0;
+	margin-bottom: 300px;
+}
+
 
 
