@@ -42,3 +42,4 @@ animatedElements.forEach(element => {
 });
 
 const routeToProject = (route) => location.href = `/project-${route}.html`
+
