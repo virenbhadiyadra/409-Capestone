@@ -8,6 +8,7 @@ body {
 }
 * {
     box-sizing: border-box;
+	font-family: 'poppins';
 }
 
 section {
@@ -766,7 +767,50 @@ input {
 }
 
 
-/* Projectt page css */
+/* Additional styles for project page */
+.project-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	color: #fff;
+}
+
+.project-container h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.project-container p {
+	font-size: 1.25rem;
+	margin-bottom: 30px;
+}
+
+.project-container img {
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+	display: block;
+	margin: 0 auto 40px auto;
+}
+
+.navigation-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.navigation-buttons a {
+	padding: 10px 20px;
+	background-color: #ff6f61;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+	background-color: #ff4f3a;
+}
 
 
 
