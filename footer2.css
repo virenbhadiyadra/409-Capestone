@@ -1,0 +1,68 @@
+/* Footer styling */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ensure sections take up space as needed */
+section {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0; /* Reduce padding on smaller screens */
+        margin-top: auto; /* Adjust the margin on smaller screens */
+    }
+
+    .footer-icons {
+        gap: 20px; /* Decrease the gap between icons */
+    }
+
+    .footer-icons a img {
+        width: 30px; /* Decrease the size of the icons */
+        height: 30px;
+    }
+
+    section {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px 0; /* Further reduce padding for very small screens */
+        margin-top: auto; /* Adjust the margin on smaller screens */
+    }
+
+    .footer-icons {
+        gap: 15px; /* Further decrease the gap between icons */
+    }
+
+    .footer-icons a img {
+        width: 25px; /* Further decrease the size of the icons */
+        height: 25px;
+    }
+
+    section {
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+}
