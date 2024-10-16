@@ -14,12 +14,12 @@ body {
 }
 
 section {
-    height: 100vh;
     width: 100vw;
     position: relative;
 }
 /* Hero section */
 .one {
+	height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +182,7 @@ section {
 }
 
 .fourth {
+	height: 100vh;
 	color: #fff;
 	font-size: 1.875rem;
 	padding-top: 120px;

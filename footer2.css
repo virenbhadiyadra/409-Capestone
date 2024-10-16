@@ -22,7 +22,6 @@ footer {
 
 /* Ensure sections take up space as needed */
 section {
-    padding: 20px;
     flex: 1;
 }
 

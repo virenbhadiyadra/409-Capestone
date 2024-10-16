@@ -85,16 +85,18 @@ h1, h2, h3 {
 }
 
 /* Past Experience and Education sections */
-.experience, .education {
+
+.experience,
+ .education {
     text-align: center;
-    margin-bottom: 20px; /* Reduced section margin */
+  display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+justify-content: center;   
+ padding: 20px; /* Reduced section margin */
 }
 
-.experience ul, .education ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; /* Remove padding and margin */
-}
+
 
 .experience ul li, .education ul li {
     margin-bottom: 10px; /* Less space between list items */
