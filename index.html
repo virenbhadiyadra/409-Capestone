@@ -107,26 +107,49 @@
                 </div>
             </div>
         </section>
-        <!-- Testimonial section starts from here -->
-        <section class="fourth">
-            <p>TESTIMONIALS</p>
-            <div class="child">
-                <img style="width: 100%;" src="assets/tst-bg.png" />
-                <div class="flex-child">
-
-
-
-                    <img class="dp" src="assets/tst-dp.png" style="margin-top: 200px;" />
-                    <div class="content">
-                        <p style="margin-top: 300px;">Client 1</p>
-                        <p style="margin-top: 10px; font-size: 1rem;">Loreum Ipsum Loreum Ipsum Loreum Ipsum Loreum
-                            Ipsum Loreum Ipsum
-                            Loreum Ipsum Loreum Ipsum
-                            Loreum Ipsum Loreum Ipsum Loreum Ipsum Loreum Ipsum Loreum Ipsum</p>
-                    </div>
+        <!-- Testimonial Section -->
+<section style="background-color: #221F1F; color: #fff; padding: 50px 20px; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; position: relative;">
+        <h2 style="font-size: 2rem; margin-bottom: 30px; color: #ff6f61;">What My Clients Say</h2>
+        
+        <div id="testimonial-carousel" style="position: relative; overflow: hidden;">
+            
+            <div class="testimonial-card active" style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); text-align: center; transition: opacity 0.5s ease-in-out; display: block;">
+                <img src="assets/client1.png" alt="Client 1 Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #ff6f61;" />
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">"Working with Viren has been a remarkable experience. His dedication and attention to detail transformed my project into something better than I could have imagined."</p>
+                    <p style="font-size: 1rem; color: #ff6f61;">— John Doe, Creative Director</p>
                 </div>
-             </div>
-        </section>
+            </div>
+
+            <div class="testimonial-card" style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); text-align: center; transition: opacity 0.5s ease-in-out; display: none;">
+                <img src="assets/client1.png" alt="Client 2 Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #ff6f61;" />
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">"Viren’s expertise and creativity were evident in every stage of our project. He brought my vision to life with professionalism and technical skill."</p>
+                    <p style="font-size: 1rem; color: #ff6f61;">— Jane Smith, Marketing Specialist</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card" style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); text-align: center; transition: opacity 0.5s ease-in-out; display: none;">
+                <img src="assets/client1.png" alt="Client 3 Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #ff6f61;" />
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">"Viren is an exceptional developer. His ability to understand our needs and deliver a beautiful, functional website has been a game-changer for our business."</p>
+                    <p style="font-size: 1rem; color: #ff6f61;">— Sarah Lee, Business Owner</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card" style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); text-align: center; transition: opacity 0.5s ease-in-out; display: none;">
+                <img src="assets/client1.png" alt="Client 4 Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #ff6f61;" />
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">"I highly recommend Viren for any project. His creative insights and technical skills helped bring our ideas to reality, exceeding our expectations."</p>
+                    <p style="font-size: 1rem; color: #ff6f61;">— Michael Brown, CEO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
          <!-- Footer Section -->
         <footer>
             <div class="footer-icons">
@@ -149,6 +172,21 @@
     </body>
        
     <!-- Link to javascript -->
+    <script>
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll(".testimonial-card");
+        const totalTestimonials = testimonials.length;
+    
+        function showNextTestimonial() {
+            testimonials[currentTestimonial].style.display = "none"; // Hide current testimonial
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials; // Move to the next testimonial
+            testimonials[currentTestimonial].style.display = "block"; // Show next testimonial
+        }
+    
+        // Change testimonial every 5 seconds
+        setInterval(showNextTestimonial, 5000);
+    </script>
+    
     <script src="script.js"></script>
     <script src="nav.js"></script>
 

@@ -108,6 +108,7 @@ section {
 }
 
 /* Style for second section */
+
 .second,
 .third {
 	display: flex;
@@ -308,7 +309,7 @@ input {
 
 	.second .beleive-in {
 		flex-direction: column;
-		height: 90vh;
+		
 		gap: 20px;
 	}
 
@@ -913,3 +914,4 @@ html, body {
 	height: 0;
 	margin-bottom: 300px;
 }
+

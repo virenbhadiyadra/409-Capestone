@@ -41,5 +41,19 @@ animatedElements.forEach(element => {
     observer.observe(element); // Start observing each element
 });
 
-const routeToProject = (route) => location.href = `/project-${route}.html`
+
+const routeToProject = (route) => {
+    location.href = `project-${route}.html`;
+};
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.altKey && event.ctrlKey && event.shiftKey && event.key === 'V') {
+        window.open('admin_login.html', '_blank'); // Opens the page in a new tab
+    }
+});
+
+
+
+
 
